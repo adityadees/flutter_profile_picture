@@ -1,4 +1,4 @@
-import 'package:flutter_test/flutter_test.dart';
+/* import 'package:flutter_test/flutter_test.dart';
 
 import 'package:flutter_profile_picture/flutter_profile_picture.dart';
 
@@ -10,3 +10,4 @@ void main() {
     expect(calculator.addOne(0), 1);
   });
 }
+ */
