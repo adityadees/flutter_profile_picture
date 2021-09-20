@@ -62,8 +62,10 @@ fixedColor(String text) {
     data = ColorName.colorNameX;
   } else if (split == 'Y') {
     data = ColorName.colorNameY;
+  } else if (split == 'Z') {
+    data = ColorName.colorNameY;
   } else {
-    data = ColorName.colorNameZ;
+    data = ColorName.colorDefault;
   }
   return data;
 }

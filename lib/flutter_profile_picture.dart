@@ -10,6 +10,7 @@ class ProfilePicture extends StatelessWidget {
   final double radius;
   final double fontsize;
   final bool tooltip;
+  final bool random;
   const ProfilePicture({
     Key key,
     @required this.name,
@@ -17,16 +18,28 @@ class ProfilePicture extends StatelessWidget {
     @required this.fontsize,
     this.role,
     this.tooltip,
+    this.random,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     if (tooltip == true) {
       return MyTooltip(
-          message: name + '\n' + role,
-          child: Avatar(radius: radius, name: name, fontsize: fontsize));
+        message: role == '' ? name : name + '\n' + role,
+        child: Avatar(
+          radius: radius,
+          name: name,
+          fontsize: fontsize,
+          random: random,
+        ),
+      );
     } else {
-      return Avatar(radius: radius, name: name, fontsize: fontsize);
+      return Avatar(
+        radius: radius,
+        name: name,
+        fontsize: fontsize,
+        random: random,
+      );
     }
   }
 }
@@ -74,29 +87,35 @@ class Avatar extends StatelessWidget {
     @required this.radius,
     @required this.name,
     @required this.fontsize,
+    this.random,
+    this.count,
   }) : super(key: key);
 
   final double radius;
   final String name;
   final double fontsize;
+  final bool random;
+  final int count;
 
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
       radius: radius,
       child: Text(
-        name == '' ? '' : GetInitialName.parseName(name).toUpperCase(),
+        name == '' ? '' : InitialName.parseName(name, count).toUpperCase(),
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: fontsize,
           letterSpacing: 1.4,
         ),
       ),
-      backgroundColor: name == ''
-          ? ColorName.colorNameZ
-          : fixedColor(
-              GetInitialName.parseName(name),
-            ),
+      backgroundColor: random == true
+          ? randomColor()
+          : name == ''
+              ? ColorName.colorDefault
+              : fixedColor(
+                  InitialName.parseName(name, count),
+                ),
       foregroundColor: Colors.white,
     );
   }
