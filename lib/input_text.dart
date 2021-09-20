@@ -4,7 +4,13 @@ class InitialName {
     var initial = '';
 
     if (parts.length > 1) {
-      initial = count ?? parts[0][0] + parts[1][0];
+      if (count != null) {
+        for (var i = 0; i < count; i++) {
+          initial += parts[i][0];
+        }
+      } else {
+        initial = parts[0][0] + parts[1][0];
+      }
     } else {
       initial = parts[0][0];
     }

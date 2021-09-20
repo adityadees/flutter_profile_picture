@@ -11,6 +11,7 @@ class ProfilePicture extends StatelessWidget {
   final double fontsize;
   final bool tooltip;
   final bool random;
+  final int count;
   const ProfilePicture({
     Key key,
     @required this.name,
@@ -19,6 +20,7 @@ class ProfilePicture extends StatelessWidget {
     this.role,
     this.tooltip,
     this.random,
+    this.count,
   }) : super(key: key);
 
   @override
@@ -31,6 +33,7 @@ class ProfilePicture extends StatelessWidget {
           name: name,
           fontsize: fontsize,
           random: random,
+          count: count,
         ),
       );
     } else {

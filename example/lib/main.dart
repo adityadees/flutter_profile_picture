@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                   child: Text(
-                    '3. Random Color',
+                    '2. Random Color',
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
@@ -109,6 +109,43 @@ class _MyHomePageState extends State<MyHomePage> {
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     child: Text(
                       'add random:true if you want to give random color',
+                      style: TextStyle(
+                        fontSize: 12,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            TableRow(
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  child: Text(
+                    '1. DEFAULT',
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Container(
+                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                    child: Row(
+                      children: [
+                        ProfilePicture(
+                          name: 'Aditya Dharmawan Saputra',
+                          radius: 31,
+                          fontsize: 21,
+                          count: 3,
+                        ),
+                      ],
+                    )),
+                Center(
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                    child: Text(
+                      'This is default style. Default color based on First Initial Name',
                       style: TextStyle(
                         fontSize: 12,
                       ),
