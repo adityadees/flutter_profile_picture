@@ -27,5 +27,6 @@ class ConstantColor {
   final colorNameX = const Color(0xFFFFAB00);
   final colorNameY = const Color(0xFFAA00FF);
   final colorNameZ = const Color(0xFF2196F3);
+  final colorDefault = const Color(0xFF717171);
   const ConstantColor();
 }
