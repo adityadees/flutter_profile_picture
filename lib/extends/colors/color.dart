@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:flutter_profile_picture/colors/constant.dart';
+import 'constant.dart';
 
 const ColorName = ConstantColor();
 
