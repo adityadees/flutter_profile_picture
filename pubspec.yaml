@@ -1,6 +1,6 @@
 name: flutter_profile_picture
 description: Setting profile picture with default short name.
-version: 1.0.0
+version: 1.0.1
 homepage: "https://github.com/adityadees/flutter_profile_picture"
 
 environment:
