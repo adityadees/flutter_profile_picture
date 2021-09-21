@@ -1,6 +1,6 @@
 # FLUTTER PROFILE PICTURE
 
- Automatically generate profile picture with random first name and background color. But you can still provide pictures if you have them.
+ Automatically generate profile picture with random first name and background color. But you can still provide pictures if you have them. As the default color, based on the name of the first letter.
 
  ![image](https://user-images.githubusercontent.com/37553901/134119907-c16c5481-2a1c-43b6-961a-986528e83f15.png)
 
