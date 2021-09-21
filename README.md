@@ -1,9 +1,8 @@
 # FLUTTER PROFILE PICTURE
 
  Automatically generate profile picture with random first name and background color. But you can still provide pictures if you have them.
- 
- ![image](https://user-images.githubusercontent.com/37553901/134119907-c16c5481-2a1c-43b6-961a-986528e83f15.png)
 
+ ![image](https://user-images.githubusercontent.com/37553901/134119907-c16c5481-2a1c-43b6-961a-986528e83f15.png)
 
 ## Style
 
@@ -51,10 +50,10 @@ ProfilePicture(
 ``` dart
 
 ProfilePicture(
-      name: 'Aditya Dharmawan Saputra',
-      radius: 31,
-      fontsize: 21,
-      count: 3,
+    name: 'Aditya Dharmawan Saputra',
+    radius: 31,
+    fontsize: 21,
+    count: 3,
 );
 ```
 
@@ -64,9 +63,9 @@ ProfilePicture(
 
 ``` dart
 ProfilePicture(
-      name: '',
-      radius: 31,
-      fontsize: 21,
+    name: '',
+    radius: 31,
+    fontsize: 21,
 );
 ```
 
@@ -76,10 +75,10 @@ ProfilePicture(
 
 ``` dart
 ProfilePicture(
-      name: 'Aditya Dharmawan Saputra',
-      radius: 31,
-      fontsize: 21,
-      img: 'https://avatars.githubusercontent.com/u/37553901?v=4',
+    name: 'Aditya Dharmawan Saputra',
+    radius: 31,
+    fontsize: 21,
+    img: 'https://avatars.githubusercontent.com/u/37553901?v=4',
 );
 ```
 
@@ -89,12 +88,11 @@ ProfilePicture(
 
 ``` dart
 ProfilePicture(
-      name: 'Aditya Dharmawan Saputra',
-      role: '',
-      radius: 31,
-      fontsize: 21,
-      tooltip: true,
-);
+    name: 'Aditya Dharmawan Saputra',
+    role: '',
+    radius: 31,
+    fontsize: 21,
+    tooltip: true,
 );
 ```
 
@@ -104,11 +102,11 @@ ProfilePicture(
 
 ``` dart
 ProfilePicture(
-      name: 'Aditya Dharmawan Saputra',
-      role: 'ADMINISTRATOR',
-      radius: 31,
-      fontsize: 21,
-      tooltip: true,
+    name: 'Aditya Dharmawan Saputra',
+    role: 'ADMINISTRATOR',
+    radius: 31,
+    fontsize: 21,
+    tooltip: true,
 );
 ```
 
@@ -118,11 +116,11 @@ ProfilePicture(
 
 ``` dart
 ProfilePicture(
-      name: 'Aditya Dharmawan Saputra',
-      role: 'ADMINISTRATOR',
-      radius: 31,
-      fontsize: 21,
-      tooltip: true,
-      img: 'https://avatars.githubusercontent.com/u/37553901?v=4',
+    name: 'Aditya Dharmawan Saputra',
+    role: 'ADMINISTRATOR',
+    radius: 31,
+    fontsize: 21,
+    tooltip: true,
+    img: 'https://avatars.githubusercontent.com/u/37553901?v=4',
 );
 ```
