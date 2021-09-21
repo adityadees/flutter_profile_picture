@@ -30,12 +30,6 @@ ProfilePicture(
 
 ``` dart
 ProfilePicture(
-    name: 'Dees',
-    radius: 31,
-    fontsize: 21,
-);
-
-ProfilePicture(
     name: 'Aditya Dharmawan Saputra',
     radius: 31,
     fontsize: 21,
