@@ -23,6 +23,7 @@ class MyTooltip extends StatelessWidget {
       message: message,
       verticalOffset: 25,
       waitDuration: const Duration(seconds: 10),
+      // to show tooltip on click
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: () => _onTap(key),
@@ -37,6 +38,7 @@ class MyTooltip extends StatelessWidget {
   }
 }
 
+// create border tooltip
 class TooltipBorder extends ShapeBorder {
   final double arrowWidth;
   final double arrowHeight;

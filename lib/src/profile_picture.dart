@@ -2,23 +2,23 @@ part of flutter_profile_picture;
 
 class ProfilePicture extends StatelessWidget {
   final String name;
-  final String role;
+  final String role; // optional
   final double radius;
   final double fontsize;
-  final bool tooltip;
-  final bool random;
-  final int count;
-  final String img;
+  final bool tooltip; // optional
+  final bool random; // optional
+  final int count; // optional
+  final String img; // optional
   const ProfilePicture({
     Key key,
     @required this.name,
     @required this.radius,
     @required this.fontsize,
-    this.role,
-    this.tooltip,
-    this.random,
-    this.count,
-    this.img,
+    this.role, // optional
+    this.tooltip, // optional
+    this.random, // optional
+    this.count, // optional
+    this.img, // optional
   }) : super(key: key);
 
   @override

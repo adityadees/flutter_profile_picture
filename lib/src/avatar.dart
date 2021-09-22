@@ -6,20 +6,21 @@ class Avatar extends StatelessWidget {
     @required this.radius,
     @required this.name,
     @required this.fontsize,
-    this.random,
-    this.count,
-    this.img,
+    this.random, // optional
+    this.count, // optional
+    this.img, // optional
   }) : super(key: key);
 
   final double radius;
   final String name;
   final double fontsize;
-  final bool random;
-  final int count;
-  final String img;
+  final bool random; // optional
+  final int count; // optional
+  final String img; // optional
 
   @override
   Widget build(BuildContext context) {
+    // check image is available or not.
     return img == null
         ? NoImage(
             radius: radius,
@@ -31,6 +32,7 @@ class Avatar extends StatelessWidget {
   }
 }
 
+// if image available
 class WithImage extends StatelessWidget {
   const WithImage({
     Key key,
@@ -43,6 +45,7 @@ class WithImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+// pass to circle avatar
     return CircleAvatar(
       radius: radius,
       backgroundImage: NetworkImage(img),
@@ -51,6 +54,7 @@ class WithImage extends StatelessWidget {
   }
 }
 
+// if no image
 class NoImage extends StatelessWidget {
   const NoImage({
     Key key,
@@ -69,10 +73,14 @@ class NoImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+// pass to circle avatar
     return CircleAvatar(
       radius: radius,
       child: Text(
-        name == '' ? '' : InitialName.parseName(name, count).toUpperCase(),
+        name == ''
+            ? ''
+            : InitialName.parseName(name, count)
+                .toUpperCase(), // check if name available
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: fontsize,

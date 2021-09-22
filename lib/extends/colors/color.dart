@@ -4,11 +4,14 @@ import 'constant.dart';
 
 const ColorName = ConstantColor();
 
+// return random color
 randomColor() {
   return Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
       .withOpacity(1.0);
 }
 
+// return fixed color
+// based on first leter
 fixedColor(String text) {
   var split = text[0].toUpperCase();
   var data;
