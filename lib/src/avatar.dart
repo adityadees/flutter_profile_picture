@@ -6,17 +6,17 @@ class Avatar extends StatelessWidget {
     @required this.radius,
     @required this.name,
     @required this.fontsize,
-    this.random, // optional
-    this.count, // optional
-    this.img, // optional
+    this.random,
+    this.count,
+    this.img,
   }) : super(key: key);
 
   final double radius;
   final String name;
   final double fontsize;
-  final bool random; // optional
-  final int count; // optional
-  final String img; // optional
+  final bool random;
+  final int count;
+  final String img;
 
   @override
   Widget build(BuildContext context) {
@@ -45,10 +45,12 @@ class WithImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-// pass to circle avatar
+    // thrown into the circle avatar class.
     return CircleAvatar(
       radius: radius,
+      // use background image
       backgroundImage: NetworkImage(img),
+      // set background color transparent
       backgroundColor: Colors.transparent,
     );
   }
@@ -73,20 +75,24 @@ class NoImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-// pass to circle avatar
+    // thrown into the circle avatar class.
     return CircleAvatar(
       radius: radius,
       child: Text(
         name == ''
             ? ''
             : InitialName.parseName(name, count)
-                .toUpperCase(), // check if name available
+                .toUpperCase(), // get initial name and set to UpperCase to all letter
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: fontsize,
           letterSpacing: 1.4,
         ),
       ),
+      // set background color
+      // default color, random, and fixed color
+      // default color if name is empty
+      // random color to make the background color change every time the page is refreshed
       backgroundColor: random == true
           ? randomColor()
           : name == ''

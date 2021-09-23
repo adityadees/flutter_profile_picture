@@ -11,6 +11,7 @@ class MyTooltip extends StatelessWidget {
     final key = GlobalKey<State<Tooltip>>();
     return Tooltip(
       key: key,
+      // use shape decoration for tooltip border
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: TooltipBorder(arrowArc: 0.1),
@@ -73,6 +74,7 @@ class TooltipBorder extends ShapeBorder {
       ..relativeLineTo(-x / 2 * r, y * r);
   }
 
+// set stroke color
   @override
   void paint(Canvas canvas, Rect rect, {TextDirection textDirection}) {
     Paint paint = new Paint()

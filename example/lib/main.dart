@@ -57,12 +57,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     child: Row(
                       children: [
+                        // if there is only one word.
                         ProfilePicture(
                           name: 'Dees',
                           radius: 31,
                           fontsize: 21,
                         ),
                         SizedBox(width: 5),
+                        // if more than one word.
                         ProfilePicture(
                           name: 'Aditya Dharmawan Saputra',
                           radius: 31,
@@ -97,6 +99,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  // set random = true
+                  // default is false
                   child: ProfilePicture(
                     name: 'Aditya Dharmawan Saputra',
                     radius: 31,
@@ -131,6 +135,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  // set limit letter
+                  // use count = 'your_limit'
+                  // default is 2 if more than one words
+                  // default is 1 if less than two words
                   child: ProfilePicture(
                     name: 'Aditya Dharmawan Saputra',
                     radius: 31,
@@ -165,6 +173,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  // for handling user without name
+                  // set name = '' (empty string)
+                  // will set default background color without name
                   child: ProfilePicture(
                     name: '',
                     radius: 31,
@@ -198,6 +209,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  // change background color to image
+                  // set img = 'your_url_img'
                   child: ProfilePicture(
                     name: 'Aditya Dharmawan Saputra',
                     radius: 31,
@@ -232,6 +245,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  // enable tooltip feature
+                  // set tooltip = true
+                  // default is false
+                  // when you click the picture
+                  // name will be appear
                   child: ProfilePicture(
                     name: 'Aditya Dharmawan Saputra',
                     role: '',
@@ -267,6 +285,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  // enable tooltip feature with role
+                  // same as example 6
+                  // but you can add parameter role = 'your_role'
+                  // role will be appear under name
                   child: ProfilePicture(
                     name: 'Aditya Dharmawan Saputra',
                     role: 'ADMINISTRATOR',
@@ -302,6 +324,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  // enable tooltip feature with role and image
+                  // same as example 7
+                  // but you can add parameter img = 'your_img'
+                  // background color and initial name will be replaced with the image
                   child: ProfilePicture(
                     name: 'Aditya Dharmawan Saputra',
                     role: 'ADMINISTRATOR',

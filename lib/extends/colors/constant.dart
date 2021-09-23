@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 // define constant color
+// each letter has a different color, and is constant.
 class ConstantColor {
   final colorNameA = const Color(0xFFAA00FF);
   final colorNameB = const Color(0xFF2196F3);
