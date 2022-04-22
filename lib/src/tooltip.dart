@@ -4,7 +4,7 @@ class MyTooltip extends StatelessWidget {
   final Widget child;
   final String message;
 
-  MyTooltip({@required this.message, @required this.child});
+  MyTooltip({required this.message, required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -57,10 +57,12 @@ class TooltipBorder extends ShapeBorder {
   EdgeInsetsGeometry get dimensions => EdgeInsets.only(bottom: arrowHeight);
 
   @override
-  Path getInnerPath(Rect rect, {TextDirection textDirection}) => null;
+  Path getInnerPath(Rect rect, {TextDirection? textDirection}) {
+      return Path();
+  }
 
   @override
-  Path getOuterPath(Rect rect, {TextDirection textDirection}) {
+  Path getOuterPath(Rect rect, {TextDirection? textDirection}) {
     rect = Rect.fromPoints(
         rect.topLeft, rect.bottomRight - Offset(0, arrowHeight));
     double x = arrowWidth, y = arrowHeight, r = 1 - arrowArc;
@@ -76,7 +78,7 @@ class TooltipBorder extends ShapeBorder {
 
 // set stroke color
   @override
-  void paint(Canvas canvas, Rect rect, {TextDirection textDirection}) {
+  void paint(Canvas canvas, Rect rect, {TextDirection? textDirection}) {
     Paint paint = new Paint()
       ..color = Colors.black
       ..style = PaintingStyle.stroke

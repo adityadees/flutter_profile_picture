@@ -1,7 +1,7 @@
 class InitialName {
   // @string name
-  // @int count (optional) to limit the number of letters that appear
-  static String parseName(String name, int count) {
+  // @int letterLimit (optional) to limit the number of letters that appear
+  static String parseName(String name, int? letterLimit) {
     // separate each word
     var parts = name.split(' ');
     var initial = '';
@@ -9,8 +9,8 @@ class InitialName {
     // check length
     if (parts.length > 1) {
       // check max limit
-      if (count != null) {
-        for (var i = 0; i < count; i++) {
+      if (letterLimit != null) {
+        for (var i = 0; i < letterLimit; i++) {
           // combine the first letters of each word
           initial += parts[i][0];
         }
