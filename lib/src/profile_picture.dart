@@ -5,7 +5,7 @@ class ProfilePicture extends StatelessWidget {
 
   // role is optional
   // it will be displayed under name
-  final String role;
+  final String? role;
   final double radius;
   final double fontsize;
 
@@ -20,19 +20,19 @@ class ProfilePicture extends StatelessWidget {
   // count is optional
   // to limit how many prefix names are displayed.
 
-  final int count;
+  final int? count;
   // img is optional
   // if "not empty", the background color and initial name will change to image.
 
-  final String img;
+  final String? img;
   const ProfilePicture({
-    Key key,
-    @required this.name,
-    @required this.radius,
-    @required this.fontsize,
+    Key? key,
+    required this.name,
+    required this.radius,
+    required this.fontsize,
     this.role,
-    this.tooltip,
-    this.random,
+    this.tooltip = false,
+    this.random = false,
     this.count,
     this.img,
   }) : super(key: key);
@@ -46,7 +46,7 @@ class ProfilePicture extends StatelessWidget {
         // when the user clicks on the profile picture, a message will appear
         // check if role is empty or not
         // if not add \n to create a break row
-        message: role == '' ? name : name + '\n' + role,
+        message: role == '' || role == null ? name : name + '\n' + role!,
         //  thrown into the avatar class.
         child: Avatar(
           radius: radius,

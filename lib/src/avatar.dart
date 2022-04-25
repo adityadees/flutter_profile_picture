@@ -2,11 +2,11 @@ part of flutter_profile_picture;
 
 class Avatar extends StatelessWidget {
   const Avatar({
-    Key key,
-    @required this.radius,
-    @required this.name,
-    @required this.fontsize,
-    this.random,
+    Key? key,
+    required this.radius,
+    required this.name,
+    required this.fontsize,
+    this.random = false,
     this.count,
     this.img,
   }) : super(key: key);
@@ -15,8 +15,8 @@ class Avatar extends StatelessWidget {
   final String name;
   final double fontsize;
   final bool random;
-  final int count;
-  final String img;
+  final int? count;
+  final String? img;
 
   @override
   Widget build(BuildContext context) {
@@ -28,16 +28,16 @@ class Avatar extends StatelessWidget {
             count: count,
             fontsize: fontsize,
             random: random)
-        : WithImage(radius: radius, img: img);
+        : WithImage(radius: radius, img: img!);
   }
 }
 
 // if image available
 class WithImage extends StatelessWidget {
   const WithImage({
-    Key key,
-    @required this.radius,
-    @required this.img,
+    Key? key,
+    required this.radius,
+    required this.img,
   }) : super(key: key);
 
   final double radius;
@@ -59,17 +59,17 @@ class WithImage extends StatelessWidget {
 // if no image
 class NoImage extends StatelessWidget {
   const NoImage({
-    Key key,
-    @required this.radius,
-    @required this.name,
-    @required this.count,
-    @required this.fontsize,
-    @required this.random,
+    Key? key,
+    required this.radius,
+    required this.name,
+    required this.count,
+    required this.fontsize,
+    required this.random,
   }) : super(key: key);
 
   final double radius;
   final String name;
-  final int count;
+  final int? count;
   final double fontsize;
   final bool random;
 
