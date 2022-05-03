@@ -23,7 +23,7 @@ jobs:
       - name: "Run Flutter Test"
         run: |
           cd example
-          flutter build web --release --base-href="/${{ github.event.repository.name }}/example/"
+          flutter build web --release
       - run: |
           git config --global user.name '${{github.event.pusher.name}}'
           git config --global user.email '${{github.event.pusher.email}}'
