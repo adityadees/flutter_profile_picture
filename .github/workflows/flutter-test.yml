@@ -1,0 +1,15 @@
+name: Flutter Test
+
+on: [pull_request]
+
+jobs:
+  accessibility_test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+      - run: "flutter pub get"
+      - name: "Run Flutter Test"
+        run: "flutter test"
