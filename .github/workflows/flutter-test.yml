@@ -17,4 +17,6 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{env.FLUTTER_VERSION}}
-      - run: flutter build web --release --base-href="/${{ github.event.repository.name }}/example/"
+      - run: |
+          cd example
+          flutter build web --release --base-href="/${{ github.event.repository.name }}/example/"
