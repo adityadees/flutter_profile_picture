@@ -2,6 +2,13 @@
 
  Automatically generate profile picture with random first name and background color. But you can still provide pictures if you have them. As the default color, based on the name of the first letter.
 
+[![Flutter Test](https://github.com/adityadees/flutter_profile_picture/actions/workflows/flutter-test.yml/badge.svg)](https://github.com/adityadees/flutter_profile_picture/actions/workflows/flutter-test.yml)
+[![Build GitHub Pages](https://github.com/adityadees/flutter_profile_picture/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/adityadees/flutter_profile_picture/actions/workflows/gh-pages.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![pub package](https://img.shields.io/pub/v/flutter_profile_picture.svg)](https://pub.dartlang.org/packages/flutter_profile_picture)
+[![GitHub popularity](https://img.shields.io/github/stars/adityadees/flutter_profile_picture?logo=github&logoColor=white)](https://github.com/adityadees/flutter_profile_picture/stargazers/)
+![version](https://img.shields.io/github/v/release/adityadees/flutter_profile_picture)
+
 ![bandicam 2021-09-22 20-35-48-079 (online-video-cutter com)](https://user-images.githubusercontent.com/37553901/134374902-7247ec0d-8c00-4218-99c1-701cc1f01565.gif)
 
 ## Style
