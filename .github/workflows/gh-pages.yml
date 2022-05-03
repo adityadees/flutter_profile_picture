@@ -20,7 +20,7 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
-      - run: flutter build web --release --base-href="/${{ github.event.repository.name }}/"
+      - run: flutter build web --release --base-href="/${{ github.event.repository.name }}/example/"
       - run: |
           git config --global user.name '${{github.event.pusher.name}}'
           git config --global user.email '${{github.event.pusher.email}}'
