@@ -27,6 +27,6 @@ jobs:
       - run: |
           git config --global user.name '${{github.event.pusher.name}}'
           git config --global user.email '${{github.event.pusher.email}}'
-          git add -f build/web
+          git add -f example/build/web
           git commit -m '[automated commit] releasing new web version.'
-          git push origin `git subtree split --prefix build/web main`:gh-pages --force
+          git push origin `git subtree split --prefix example/build/web main`:gh-pages --force
