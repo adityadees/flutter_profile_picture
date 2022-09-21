@@ -1,6 +1,7 @@
 library flutter_profile_picture;
 
 import 'package:flutter/material.dart';
+import 'extends/colors/constant.dart';
 import 'extends/input_text.dart';
 import 'extends/colors/color.dart';
 
