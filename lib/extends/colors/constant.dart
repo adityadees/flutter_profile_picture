@@ -3,32 +3,34 @@ import 'package:flutter/material.dart';
 // define constant color
 // each letter has a different color, and is constant.
 class ConstantColor {
-  final colorNameA = const Color(0xFFAA00FF);
-  final colorNameB = const Color(0xFF2196F3);
-  final colorNameC = const Color(0xFF1DE9B6);
-  final colorNameD = const Color(0xFFCDDC39);
-  final colorNameE = const Color(0xFF689F38);
-  final colorNameF = const Color(0xFF388E3C);
-  final colorNameG = const Color(0xFFF57C00);
-  final colorNameH = const Color(0xFFFFA000);
-  final colorNameI = const Color(0xFFFBC02D);
-  final colorNameJ = const Color(0xFFFFEA00);
-  final colorNameK = const Color(0xFFE64A19);
-  final colorNameL = const Color(0xFF5D4037);
-  final colorNameM = const Color(0xFF7E57C2);
-  final colorNameN = const Color(0xFF2196F3);
-  final colorNameO = const Color(0xFFAA00FF);
-  final colorNameP = const Color(0xFF2196F3);
-  final colorNameQ = const Color(0xFF00B0FF);
-  final colorNameR = const Color(0xFF00E5FF);
-  final colorNameS = const Color(0xFFAA00FF);
-  final colorNameT = const Color(0xFF2196F3);
-  final colorNameU = const Color(0xFF64DD17);
-  final colorNameV = const Color(0xFFAEEA00);
-  final colorNameW = const Color(0xFFAA00FF);
-  final colorNameX = const Color(0xFFFFAB00);
-  final colorNameY = const Color(0xFFAA00FF);
-  final colorNameZ = const Color(0xFF2196F3);
-  final colorDefault = const Color(0xFF717171);
-  const ConstantColor();
+  static const colorDefault = Color(0xFF717171);
+
+  static final colorIntial = {
+    'A': const Color(0xFFAA00FF),
+    'B': const Color(0xFF2196F3),
+    'C': const Color(0xFF1DE9B6),
+    'D': const Color(0xFFCDDC39),
+    'E': const Color(0xFF689F38),
+    'F': const Color(0xFF388E3C),
+    'G': const Color(0xFFF57C00),
+    'H': const Color(0xFFFFA000),
+    'I': const Color(0xFFFBC02D),
+    'J': const Color(0xFFFFEA00),
+    'K': const Color(0xFFE64A19),
+    'L': const Color(0xFF5D4037),
+    'M': const Color(0xFF7E57C2),
+    'N': const Color(0xFF2196F3),
+    'O': const Color(0xFFAA00FF),
+    'P': const Color(0xFF2196F3),
+    'Q': const Color(0xFF00B0FF),
+    'R': const Color(0xFF00E5FF),
+    'S': const Color(0xFFAA00FF),
+    'T': const Color(0xFF2196F3),
+    'U': const Color(0xFF64DD17),
+    'V': const Color(0xFFAEEA00),
+    'W': const Color(0xFFAA00FF),
+    'X': const Color(0xFFFFAB00),
+    'Y': const Color(0xFFAA00FF),
+    'Z': const Color(0xFF2196F3),
+  };
 }
