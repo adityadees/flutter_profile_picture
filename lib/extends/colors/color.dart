@@ -18,3 +18,8 @@ fixedColor(String text) {
 
   return ConstantColor.colorIntial[split] ?? ConstantColor.colorDefault;
 }
+
+// generate random color 
+randomColorFromTheme(List<Color> colorsTheme) {
+    return colorsTheme[math.Random().nextInt(colorsTheme.length + 1)];
+}
